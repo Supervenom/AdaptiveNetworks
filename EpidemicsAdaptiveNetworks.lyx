@@ -1,0 +1,572 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usepackage{microtype}
+\usepackage{pgf,tikz}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usetikzlibrary{arrows}
+\usetheme{Frankfurt}
+\definecolor{blue1}{RGB}{51,51,179}
+\definecolor{blue2}{RGB}{0,0,204}
+\definecolor{blue3}{RGB}{0,0,153}
+\setbeamercolor{author in head/foot}{fg=white, bg=blue3}
+\setbeamercolor{title in head/foot}{fg=white, bg=blue2}
+\setbeamercolor{date in head/foot}{fg=white, bg=blue1}
+\useoutertheme{split}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1mm}
+  \setlength{\TPVertModule}{1mm}
+\newcommand\Fontvi{\fontsize{8}{12}\selectfont}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.75in
+\topmargin 0.6in
+\rightmargin 0.75in
+\bottommargin 0.6in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title (Plain Frame)
+Dinamica epidemica su reti adattative
+\end_layout
+
+\begin_layout Subtitle
+Thilo Gross, Carlos Dommar D'Lima, and Bernd Blasius
+\end_layout
+
+\begin_layout Author
+Gabriele Vanoni
+\end_layout
+
+\begin_layout Institute
+Politecnico di Milano
+\end_layout
+
+\begin_layout Date
+6 Aprile 2017
+\end_layout
+
+\begin_layout Section
+Introduzione
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Introduzione
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+I punti di partenza
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Nei lavori fondamentali di Watts e Strogatz (1998) e di Barabasi e Albert
+ (1999) viene messo in evidenza come semplici operazioni dinamiche rispettivamen
+te di 
+\begin_inset Quotes eld
+\end_inset
+
+rewiring selettivo
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+attaccamento preferenziale
+\begin_inset Quotes erd
+\end_inset
+
+ portino alla generazione di modelli complessi di rete che riflettono proprietà
+ di reti reali.
+\end_layout
+
+\begin_layout Itemize
+Nel lavoro di Pastor-Satorras e Vespignani (2001) viene fatto vedere come
+ utilizzare una rete complessa (scale-free) per modellare le interazioni
+ tra un grande ensemble di sistemi dinamici possa portare a una forte modifica
+ della dinamica dei nodi, e in particolare all'assenza della soglia epidemiologi
+ca nel modello SIS.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+L'idea: reti adattative
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Mantenendo le due dinamiche, della rete e sulla rete, separate tuttavia
+ non si considera una importante caratteristica delle reti reali: la capacità
+ della rete di adattare la propria topologia dinamicamente in risposta allo
+ stato dinamico dei nodi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename feedback.png
+	lyxscale 10
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+Gross and Blasius, J.R.Soc Interface, 2007
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Modello
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Modello
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Definizione del modello
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Definizione
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consideriamo una rete non diretta, non pesata con 
+\begin_inset Formula $N$
+\end_inset
+
+ nodi e 
+\begin_inset Formula $K$
+\end_inset
+
+ link.
+\end_layout
+
+\begin_layout Itemize
+Ogni nodo può essere suscettibile (S) o infetto (I).
+\end_layout
+
+\begin_layout Itemize
+Ad ogni intervallo di tempo 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+, per ogni link SI, il suscettibile diventa infetto con probabilità 
+\begin_inset Formula $p$
+\end_inset
+
+ costante.
+\end_layout
+
+\begin_layout Itemize
+Gli infetti si riprendono dalla malattia ritornando suscettibili con probabilità
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ costante.
+\end_layout
+
+\begin_layout Itemize
+I suscettibili redirigono con probabilità 
+\begin_inset Formula $w$
+\end_inset
+
+ ogni link SI verso un suscettibile scelto a caso (auto-anelli e doppie
+ connssioni non sono permessi)
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti del rewiring sulla stabilità dell'epidemia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Chiamiamo:
+\end_layout
+
+\begin_layout Block
+
+\end_layout
+
+\begin_layout Block
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $p^{*}$
+\end_inset
+
+ la 
+\series bold
+minima probabilità di infezione
+\series default
+ necessaria a mantenere stabile l'epidemia.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $R_{0}$
+\end_inset
+
+ il 
+\series bold
+basic reproductive number
+\series default
+ ovvero numero di nodi infettati da un singolo nodo infetto immerso in una
+ rete di suscettibili.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+In una rete 
+\series bold
+casuale senza rewiring
+\series default
+ 
+\begin_inset Formula $R_{0}=\frac{p\left\langle k\right\rangle }{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Diciamo che l'epidemia è stabile se 
+\begin_inset Formula $R_{0}\geq1$
+\end_inset
+
+, da cui 
+\begin_inset Formula $p^{*}=\frac{r}{\left\langle k\right\rangle }$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerando che il 
+\series bold
+rewiring
+\series default
+ fa perdere in media a un nodo infetto una frazione costante 
+\begin_inset Formula $w$
+\end_inset
+
+ di link il suo grado è descritto dall'equazione 
+\begin_inset Formula $k(t)=\left\langle k\right\rangle e^{-wt}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mediando sull'intervallo 
+\begin_inset Formula $\left[0,\frac{1}{r}\right]$
+\end_inset
+
+ si ottiene per una rete inizialmente casuale 
+\series bold
+con rewiring
+\series default
+ 
+\begin_inset Formula $p^{*}=\frac{w}{\left\langle k\right\rangle (1-e^{-\frac{w}{r}})}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti del rewiring sulla stabilità dell'epidemia (continua)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Si nota che coerentemente 
+\begin_inset Formula $p^{*}\rightarrow\frac{r}{\left\langle k\right\rangle }$
+\end_inset
+
+ per 
+\begin_inset Formula $w\rightarrow0$
+\end_inset
+
+.
+ Inoltre 
+\begin_inset Formula $p^{*}\rightarrow\frac{w}{\left\langle k\right\rangle }$
+\end_inset
+
+ per 
+\begin_inset Formula $\frac{w}{r}\rightarrow+\infty$
+\end_inset
+
+, un alto tasso di rewiring dunque aumenta significativamente la soglia
+ epidemiologica.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+grafico p* in funzione di w
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti del rewiring sulla topologia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Risultati
+\end_layout
+
+\begin_layout PlainFrame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Risultati
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
