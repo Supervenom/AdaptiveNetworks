@@ -542,7 +542,7 @@ grafico p* in funzione di w
 status open
 
 \begin_layout Plain Layout
-Effetti del rewiring sulla topologia
+Effetti del rewiring sulla topologia (1/3)
 \end_layout
 
 \end_inset
@@ -550,6 +550,205 @@ Effetti del rewiring sulla topologia
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Per descrivere gli effetti del rewiring sulla topologia consideriamo tre
+ dinamiche distinte.
+\end_layout
+
+\begin_layout Block
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+1° caso
+\series default
+: rewiring casule.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+2° caso
+\series default
+: rewiring selettivo ma dinamica locale assente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+3° caso
+\series default
+: rewiring selettivo e dinamica locale presente..
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Il 
+\series bold
+primo caso
+\series default
+ è banale in quanto porta la distribuzione di grado a una Poissoniana di
+ media 
+\begin_inset Formula $\left\langle k\right\rangle $
+\end_inset
+
+ e il grado medio dei vicini di un nodo ad essere indipendente dal grado
+ del nodo stesso, come ci si aspetta da una 
+\series bold
+rete casuale
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nel 
+\series bold
+secondo caso
+\series default
+ il rewiring fa sì che all'equilibrio si arrivi ad avere due 
+\series bold
+componenti disconnesse
+\series default
+ tra di loro, una di infetti, l'altra di suscettibili.
+ Se la rete di partenza è casuale le due sottoreti saranno ancora individualment
+e casuali ma a causa del rewiring selettivo la rete dei suscettibili avrà
+ una maggiore connettività.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti del rewiring sulla topologia (2/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Nel 
+\series bold
+terzo caso
+\series default
+ il rewiring non è abbastanza veloce da separare completamente le due componenti
+, tuttavia contribuisce fortemente alla diminuzione dei collegamenti SI,
+ che vengono però reintrodotti a causa delle guarigioni e delle nuove infezioni.
+\end_layout
+
+\begin_layout Standard
+Questa dinamica porta a una distribuzione di grado più larga e una forte
+ 
+\series bold
+assortatività
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename medium.png
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+sistemare immagini, spezzandola nelle due slide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti del rewiring sulla topologia (3/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Un'analisi più raffinata può essere condotta considerando i parametri topologici
+ in funzione della probabilità di rewiring 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename medium2.png
+	lyxscale 10
+	scale 35
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+didascalia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Risultati
 \end_layout
