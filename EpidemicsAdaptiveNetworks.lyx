@@ -382,9 +382,9 @@ Chiamiamo:
 \begin_inset Formula $p^{*}$
 \end_inset
 
- la 
+ la
 \series bold
-minima probabilità di infezione
+ probabilità soglia di infezione
 \series default
  necessaria a mantenere stabile l'epidemia.
 \end_layout
@@ -416,7 +416,7 @@ casuale senza rewiring
 
 \begin_layout Standard
 Diciamo che l'epidemia è stabile se 
-\begin_inset Formula $R_{0}\geq1$
+\begin_inset Formula $R_{0}=1$
 \end_inset
 
 , da cui 
@@ -749,8 +749,171 @@ didascalia
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti globali del rewiring
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Abbiamo visto che la 
+\series bold
+dinamica locale
+\series default
+ del rewiring tende a far aumentare la soglia epidemiologica sfavorendo
+ così la diffusione dell'epidemia mentre la 
+\series bold
+dinamica topologica
+\series default
+ tende a far aumentare la varianza della distribzione di grado perciò facendo
+ diminuire la soglia epidemiologica (che va come 
+\begin_inset Formula $\frac{r\left\langle k\right\rangle }{\left\langle k^{2}\right\rangle }$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si instaura nella rete in questo modo una 
+\series bold
+dinamica complessa
+\series default
+ che è conveniente descrivere con un 
+\series bold
+modello di campo medio
+\series default
+.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Le variabili di stato di campo medio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $i$
+\end_inset
+
+: densità degli infetti.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l_{II}$
+\end_inset
+
+: densità per nodo di link II.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $l_{SS}$
+\end_inset
+
+: densità per nodo di link SS.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Il modello di campo medio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Il sistema di ODE
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{cases}
+\dot{i}=pl_{SI}-ri\\
+\dot{l_{II}}=pl_{SI}\left(\frac{l_{SI}}{s}+1\right)-2rl_{II}\\
+\dot{l_{SS}}=(r+w)l_{SI}-\frac{2pl_{SI}l_{SS}}{s}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+figura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
-Risultati
+Conlusioni
 \end_layout
 
 \begin_layout PlainFrame
@@ -763,7 +926,7 @@ Risultati
 
 \series bold
 \size largest
-Risultati
+Conclusioni
 \end_layout
 
 \end_deeper
