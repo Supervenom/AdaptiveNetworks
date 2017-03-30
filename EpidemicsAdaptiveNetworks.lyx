@@ -911,6 +911,78 @@ figura
 
 \end_layout
 
+\begin_layout Standard
+Dall'analisi di 
+\series bold
+biforcazione
+\series default
+ rispetto a 
+\begin_inset Formula $p$
+\end_inset
+
+ per i diversi valori di 
+\begin_inset Formula $w$
+\end_inset
+
+ notiamo la presenza di 
+\series bold
+dinamiche complesse
+\series default
+.
+ Sono infatti presenti 
+\series bold
+cicli di isteresi
+\series default
+, 
+\series bold
+bistabilità
+\series default
+ e 
+\series bold
+dinamiche oscillatorie
+\series default
+ (linee spesse).
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Analisi di biforcazione completa
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+figura
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Section
 Conlusioni
@@ -927,6 +999,41 @@ Conlusioni
 \series bold
 \size largest
 Conclusioni
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusioni
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+figura e roba review
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
