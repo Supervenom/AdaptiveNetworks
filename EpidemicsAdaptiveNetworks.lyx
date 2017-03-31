@@ -45,7 +45,7 @@
 \maintain_unincluded_children false
 \language italian
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman "lmodern" "default"
 \font_sans "lmss" "default"
@@ -397,8 +397,8 @@ Chiamiamo:
 \series bold
 basic reproductive number
 \series default
- ovvero numero di nodi infettati da un singolo nodo infetto immerso in una
- rete di suscettibili.
+ ovvero il numero di nodi infettati da un singolo nodo infetto immerso in
+ una rete di suscettibili.
 \end_layout
 
 \end_deeper
@@ -465,7 +465,7 @@ Mediando sull'intervallo
 \series bold
 con rewiring
 \series default
- 
+, 
 \begin_inset Formula $p^{*}=\frac{w}{\left\langle k\right\rangle (1-e^{-\frac{w}{r}})}$
 \end_inset
 
@@ -516,20 +516,21 @@ Si nota che coerentemente
  epidemiologica.
 \end_layout
 
-\end_deeper
-\begin_layout Frame
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-grafico p* in funzione di w
-\end_layout
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename soglia.pdf
+	lyxscale 10
+	scale 45
+	BoundingBox 0bp 200bp 590bp 600bp
+	clip
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1338,5 +1339,21 @@ Bibliografia
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "EpidemicsAdaptiveNetwork"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
