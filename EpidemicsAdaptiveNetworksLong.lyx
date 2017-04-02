@@ -163,42 +163,13 @@ I punti di partenza
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{textblock}{60}(10,15)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Modelli generativi di reti complesse
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
-Reti 
+Nei lavori fondamentali di Watts e Strogatz (1998) e di Barabasi e Albert
+ (1999) viene messo in evidenza come semplici 
 \series bold
-small world
+operazioni dinamiche
 \series default
- attraverso 
+ rispettivamente di 
 \begin_inset Quotes eld
 \end_inset
 
@@ -206,15 +177,7 @@ rewiring selettivo
 \begin_inset Quotes erd
 \end_inset
 
- [Watts e Strogatz, 1998]
-\end_layout
-
-\begin_layout Itemize
-Reti 
-\series bold
-scale-free
-\series default
- attraverso 
+ e 
 \begin_inset Quotes eld
 \end_inset
 
@@ -222,41 +185,15 @@ attaccamento preferenziale
 \begin_inset Quotes erd
 \end_inset
 
- [Barabasi e Albert, 1999]
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Modello SIS su rete [Pastor-Satorras e Vespignani, 2001]
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-La 
+ portino alla generazione di 
 \series bold
-topologia
+modelli di reti complesse
 \series default
- della rete influenza la dinamica di diffusione dell'epidemia.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
+ che riflettono proprietà di 
+\series bold
+reti reali
+\series default
+.
 \begin_inset ERT
 status open
 
@@ -264,22 +201,33 @@ status open
 
 
 \backslash
-end{textblock}
+pause
 \end_layout
 
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-immagini
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Nel lavoro di Pastor-Satorras e Vespignani (2001) viene fatto vedere come
+ utilizzare una 
+\series bold
+rete complessa
+\series default
+ (scale-free) per modellare le interazioni tra un grande 
+\series bold
+ensemble di sistemi dinamici
+\series default
+ possa portare a una forte modifica della 
+\series bold
+dinamica di diffusione delle epidemie
+\series default
+, e in particolare all'assenza della soglia epidemiologica nel 
+\series bold
+modello SIS
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -295,7 +243,7 @@ immagini
 status open
 
 \begin_layout Plain Layout
-L'idea
+L'idea: reti adattative
 \end_layout
 
 \end_inset
@@ -304,26 +252,22 @@ L'idea
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Reti adattative
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Block
-Chiamiamo una rete 
+\begin_layout Standard
+Mantenendo le due dinamiche, 
 \series bold
-adattativa
+della
 \series default
- (o coevolutiva) se è in grado di modificare la propria topologia dinamicamente
- in risposta allo stato dinamico dei nodi.
+ rete e 
+\series bold
+sulla
+\series default
+ rete, separate tuttavia non si considera un'importante caratteristica delle
+ reti reali: la capacità della rete di 
+\series bold
+adattare
+\series default
+ la propria topologia dinamicamente in risposta allo stato dinamico dei
+ nodi.
 \begin_inset ERT
 status open
 
@@ -340,7 +284,7 @@ pause
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -349,17 +293,10 @@ pause
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename fdistnet1.png
+	filename feedback.png
 	lyxscale 10
-	scale 16
+	scale 15
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace -1cm
 \end_inset
 
 
@@ -369,7 +306,7 @@ pause
 \align center
 
 \size tiny
-Nishant Malik and Feng Shi, DSWeb, 2017
+Gross and Blasius, J.R.Soc Interface, 2007
 \end_layout
 
 \end_deeper
@@ -471,7 +408,7 @@ Ad ogni intervallo di tempo
 \end_inset
 
  ogni link SI verso un suscettibile scelto a caso (auto-anelli e doppie
- connessioni non sono permessi).
+ connessioni non sono permessi)
 \end_layout
 
 \end_deeper
@@ -743,7 +680,7 @@ soglia epidemiologica
 status open
 
 \begin_layout Plain Layout
-Effetti del rewiring sulla topologia (1/2)
+Effetti del rewiring sulla topologia (1/3)
 \end_layout
 
 \end_inset
@@ -824,43 +761,26 @@ status open
 
 
 \backslash
-begin{textblock}{42}(10,50)
+begin{textblock}{50}(10,50)
 \end_layout
 
 \end_inset
 
-Il modello completo porta:
-\end_layout
-
-\begin_layout Block
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
+Il 
 \series bold
-Allargamento
+primo caso
 \series default
- della distribuzione di grado
-\end_layout
+ è banale in quanto porta la distribuzione di grado a una Poissoniana di
+ media 
+\begin_inset Formula $\left\langle k\right\rangle $
+\end_inset
 
-\begin_layout Itemize
-
+ e il grado medio dei vicini di un nodo ad essere indipendente dal grado
+ del nodo stesso, come ci si aspetta da una 
 \series bold
-Assortatività
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Separazione
+rete casuale
 \series default
- tra suscettibli e infetti
-\end_layout
-
-\end_deeper
-\begin_layout Standard
+.
 \begin_inset ERT
 status open
 
@@ -885,14 +805,14 @@ status open
 
 
 \backslash
-begin{textblock}{100}(57,50)
+begin{textblock}{50}(70,50)
 \end_layout
 
 \end_inset
 
 
 \begin_inset Graphics
-	filename medium.png
+	filename first.png
 	lyxscale 10
 	scale 35
 
@@ -927,7 +847,187 @@ end{textblock}
 status open
 
 \begin_layout Plain Layout
-Effetti del rewiring sulla topologia (2/2)
+Effetti del rewiring sulla topologia (2/3)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{75}(10,15)
+\end_layout
+
+\end_inset
+
+Nel 
+\series bold
+secondo caso
+\series default
+ il rewiring fa sì che all'equilibrio si arrivi ad avere due 
+\series bold
+componenti disconnesse
+\series default
+ tra di loro, una di infetti, l'altra di suscettibili.
+ Se la rete di partenza è casuale le due sottoreti saranno ancora individualment
+e casuali ma a causa del rewiring selettivo la rete dei suscettibili avrà
+ una maggiore connettività.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{75}(90,12)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename second.png
+	lyxscale 10
+	scale 32
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{75}(10,52)
+\end_layout
+
+\end_inset
+
+Nel 
+\series bold
+terzo caso
+\series default
+ il rewiring non è abbastanza veloce da separare completamente le due componenti
+, tuttavia contribuisce fortemente alla diminuzione dei collegamenti SI,
+ che vengono però reintrodotti a causa delle guarigioni e delle nuove infezioni.
+\end_layout
+
+\begin_layout Standard
+Questa dinamica porta a una distribuzione di grado più larga e una forte
+ 
+\series bold
+assortatività
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{75}(90,53)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename third.png
+	lyxscale 10
+	scale 32
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Effetti del rewiring sulla topologia (3/3)
 \end_layout
 
 \end_inset
@@ -1027,16 +1127,6 @@ status open
 
 \backslash
 pause
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-rifrasare
 \end_layout
 
 \end_inset
@@ -1233,16 +1323,6 @@ end{textblock}
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-metterlo come elenco
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1372,10 +1452,17 @@ Conclusioni
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename feedback.png
+	filename fdistnet1.png
 	lyxscale 10
-	scale 15
+	scale 16
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -1cm
 \end_inset
 
 
@@ -1385,7 +1472,22 @@ Conclusioni
 \align center
 
 \size tiny
-Gross and Blasius, J.R.Soc Interface, 2007
+Nishant Malik and Feng Shi, DSWeb, 2017
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1442,16 +1544,6 @@ funzione della consapevolezza
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-rifrasare
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
