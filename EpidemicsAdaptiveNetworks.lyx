@@ -207,7 +207,11 @@ rewiring selettivo
 \begin_inset Quotes erd
 \end_inset
 
- [Watts e Strogatz, 1998]
+ [Watts e Strogatz, 
+\shape italic
+Nature
+\shape default
+, 1998]
 \end_layout
 
 \begin_layout Itemize
@@ -223,7 +227,11 @@ attaccamento preferenziale
 \begin_inset Quotes erd
 \end_inset
 
- [Barabasi e Albert, 1999]
+ [Barabasi e Albert, 
+\shape italic
+Science
+\shape default
+, 1999]
 \end_layout
 
 \end_deeper
@@ -239,7 +247,13 @@ attaccamento preferenziale
 status open
 
 \begin_layout Plain Layout
-Modello SIS su rete [Pastor-Satorras e Vespignani, 2001]
+Modello SIS su rete [Pastor-Satorras e Vespignani, 
+\shape italic
+Phys.
+ Rev.
+ Lett.
+\shape default
+, 2001]
 \end_layout
 
 \end_inset
@@ -271,11 +285,113 @@ end{textblock}
 \end_inset
 
 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-immagini
+
+
+\backslash
+begin{textblock}{30}(75,12)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 393440aa.eps.2.gif
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+Watts e Strogatz, 
+\shape italic
+Nature
+\shape default
+, 1998
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset Graphics
+	filename Scale-free_network_sample.png
+	lyxscale 10
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+Castiglio,
+\shape italic
+ PhD Thesis
+\shape default
+, 2004
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename soglia2.png
+	lyxscale 10
+	scale 15
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+Piccardi, 
+\shape italic
+Lett.
+ Mat.
+ Int
+\shape default
+., 2013
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
 \end_layout
 
 \end_inset
@@ -370,7 +486,11 @@ pause
 \align center
 
 \size tiny
-Nishant Malik and Feng Shi, DSWeb, 2017
+Nishant Malik and Feng Shi, 
+\shape italic
+DSWeb
+\shape default
+, 2017
 \end_layout
 
 \end_deeper
@@ -830,7 +950,7 @@ begin{textblock}{42}(10,50)
 
 \end_inset
 
-Il modello completo porta a:
+Il modello completo porta:
 \end_layout
 
 \begin_layout Block
@@ -938,6 +1058,22 @@ Effetti del rewiring sulla topologia (2/2)
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{105}(10,15)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Un'analisi più raffinata può essere condotta considerando i 
 \series bold
 parametri topologici
@@ -950,14 +1086,40 @@ parametri topologici
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace bigskip
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{50}(8,30)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
 \begin_inset Graphics
 	filename medium2.png
 	lyxscale 10
@@ -966,11 +1128,88 @@ parametri topologici
 \end_inset
 
 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-didascalia
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{50}(72,30)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+All'aumentare di 
+\begin_inset Formula $w$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Block
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aumenta l'
+\series bold
+assortatività.
+\end_layout
+
+\begin_layout Itemize
+Aumenta la 
+\series bold
+media
+\series default
+ della distribuzione di grado dei suscettibili (cerchi).
+\end_layout
+
+\begin_layout Itemize
+Aumenta la 
+\series bold
+varianza
+\series default
+ della distribuzione di grado dei suscettibili (cerchi).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
 \end_layout
 
 \end_inset
@@ -1103,14 +1342,14 @@ Le variabili di stato di campo medio
 \begin_inset Formula $l_{II}$
 \end_inset
 
-: densità per nodo di link II.
+: densità di link II.
 \end_layout
 
 \begin_layout Itemize
 \begin_inset Formula $l_{SS}$
 \end_inset
 
-: densità per nodo di link SS.
+: densità di link SS.
 \end_layout
 
 \end_deeper
@@ -1317,6 +1556,14 @@ Analisi di biforcazione completa
 
 \begin_deeper
 \begin_layout Standard
+\begin_inset VSpace -0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename medium4.png
 	lyxscale 10
@@ -1325,16 +1572,78 @@ Analisi di biforcazione completa
 \end_inset
 
 
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
 status open
 
 \begin_layout Plain Layout
-didascalia
+Legenda
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Block
+\begin_inset Formula $-\cdot-\cdot-$
+\end_inset
+
+ : 
+\series bold
+transcritica
+\begin_inset space \qquad{}
+\end_inset
+
+
+\begin_inset Formula $----$
+\end_inset
+
+ 
+\series default
+:
+\series bold
+ nodo sella
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+rule[0.5ex]{1.45cm}{1pt}
+\end_layout
+
+\end_inset
+
+ : 
+\series bold
+Hopf
+\begin_inset space \hspace{}
+\length 1.96cm
+\end_inset
+
+
+\begin_inset Formula $\cdot\cdot\cdot\cdot\cdot\cdot\cdot\cdot$
+\end_inset
+
+ 
+\series default
+:
+\series bold
+ tangente di cicli
 \end_layout
 
 \end_deeper
@@ -1378,6 +1687,23 @@ Conclusioni
 
 \begin_deeper
 \begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{50}(10,10)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename feedback.png
@@ -1390,28 +1716,25 @@ Conclusioni
 \end_layout
 
 \begin_layout Standard
-\align center
+\begin_inset VSpace -1cm
+\end_inset
 
-\size tiny
-Gross and Blasius, J.R.Soc Interface, 2007
+
 \end_layout
 
 \begin_layout Standard
-Il modello presentato va ad arricchire la letteratura riguardante la dinamica
- 
-\series bold
-su
-\series default
- e 
-\series bold
-di
-\series default
- reti complesse con un nuovo capitolo, mostrando come l'interazione tra
- le due dinamiche porti a risultati 
-\series bold
-non banali
-\series default
-.
+\align center
+
+\size tiny
+Gross and Blasius, 
+\shape italic
+J.R.Soc Interface
+\shape default
+, 2007
+\end_layout
+
+\begin_layout Standard
+\align left
 \begin_inset ERT
 status open
 
@@ -1419,7 +1742,7 @@ status open
 
 
 \backslash
-pause
+end{textblock}
 \end_layout
 
 \end_inset
@@ -1428,16 +1751,86 @@ pause
 \end_layout
 
 \begin_layout Standard
-L'indagine svolta è solo un primo tentativo e molti ulteriori 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{55}(65,15)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il modello presentato arricchisce la letteratura riguardante la dinamica
+ 
 \series bold
-avanzamenti
+su
 \series default
- sono possibili.
- Per rendere il modello più 
+ e 
 \series bold
-realistico
+di
 \series default
- si potrebbe ad esempio considerare la probabilità di rewiring 
+ reti complesse con un nuovo capitolo, mostrando come l'
+\series bold
+interazione
+\series default
+ tra le due dinamiche porti alla formazione di un 
+\series bold
+anello di retroazione
+\series default
+ che produce dinamiche complesse.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{textblock}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{textblock}{105}(10,65)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ulteriori 
+\series bold
+raffinamenti
+\series default
+ del modello sono possibili.
+ Ad esempio:
+\end_layout
+
+\begin_layout Itemize
+considerare la probabilità di rewiring 
 \begin_inset Formula $w$
 \end_inset
 
@@ -1450,11 +1843,42 @@ funzione della consapevolezza
 \end_inset
 
 .
-\begin_inset Note Note
+ [Gross e Kevrekidis, 
+\shape italic
+arXiv
+\shape default
+, 2007]
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+temporizzare
+\series default
+ il rewiring.
+ [Valdez 
+\shape italic
+et al
+\shape default
+., 
+\shape italic
+Phys.
+ Rev.
+ E
+\shape default
+, 2012]
+\end_layout
+
+\begin_layout Standard
+\align left
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-rifrasare
+
+
+\backslash
+end{textblock}
 \end_layout
 
 \end_inset
@@ -1496,6 +1920,145 @@ options "plain"
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Derivazione del modello di campo medio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Derivata degli infetti: 
+\begin_inset Formula $\frac{\mathsf{d}i}{\mathsf{d}t}=pl_{SI}-ri$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aumento dovuto al contagio, per ogni link SI con probabilità 
+\begin_inset Formula $p$
+\end_inset
+
+ il suscettibile diventa infetto: 
+\begin_inset Formula $pl_{SI}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Diminuzione dovuta alla ripresa, ogni nodo infetto con probabilità 
+\begin_inset Formula $r$
+\end_inset
+
+ torna suscettiblile: 
+\begin_inset Formula $-ri$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Derivata dei link II: 
+\begin_inset Formula $\frac{\mathsf{d}l_{II}}{\mathsf{d}t}=pl_{SI}\left(\frac{l_{SI}}{s}+1\right)-2rl_{II}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aumento dovuto al contagio da parte del nodo 
+\begin_inset Formula $i$
+\end_inset
+
+: 
+\begin_inset Formula $pl_{SI}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Aumento dovuto al contagio di nodi 
+\begin_inset Formula $i$
+\end_inset
+
+ collegati ad 
+\begin_inset Formula $s$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{pl_{SI}^{2}}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Diminuzione dovuta alla ripresa dei nodi 
+\begin_inset Formula $i$
+\end_inset
+
+: 
+\begin_inset Formula $-2rl_{II}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Derivata dei link SS: 
+\begin_inset Formula $\frac{\mathsf{d}l_{SS}}{\mathsf{d}t}=(r+w)l_{SI}-\frac{2pl_{SI}l_{SS}}{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Aumento dovuto alla ripresa degli infetti: 
+\begin_inset Formula $rl_{SI}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Aumento dovuto al rewiring: 
+\begin_inset Formula $wl_{SI}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Diminuzione dovuta al contagio 
+\begin_inset Formula $-\frac{2pl_{SI}l_{SS}}{s}$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
