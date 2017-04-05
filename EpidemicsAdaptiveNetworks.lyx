@@ -1958,11 +1958,7 @@ Derivata degli infetti:
 \end_layout
 
 \begin_layout Itemize
-Aumento dovuto al contagio, per ogni link SI con probabilità 
-\begin_inset Formula $p$
-\end_inset
-
- il suscettibile diventa infetto: 
+Aumento dovuto al contagio: 
 \begin_inset Formula $pl_{SI}$
 \end_inset
 
@@ -1970,15 +1966,31 @@ Aumento dovuto al contagio, per ogni link SI con probabilità
 \end_layout
 
 \begin_layout Itemize
-Diminuzione dovuta alla ripresa, ogni nodo infetto con probabilità 
-\begin_inset Formula $r$
-\end_inset
-
- torna suscettiblile: 
+Diminuzione dovuta alla ripresa: 
 \begin_inset Formula $-ri$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Moment closure approximation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset Formula $l_{ABC}=l_{AB}\mathsf{Pr}(BC|B)=l_{AB}\frac{l_{BC}}{B}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
